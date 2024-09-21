@@ -1,0 +1,205 @@
+body {
+  background-color: #000000; /* Fondo morado suave */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Centra horizontalmente los elementos */
+  justify-content: center; /* Centra verticalmente los elementos */
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el texto y la flor */
+}
+
+.flower {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #000000; /* Fondo negro */
+  animation: pulsate 2s infinite;
+}
+
+.mid {
+  width: 135px; /* Tamaño incrementado */
+  height: 135px; /* Tamaño incrementado */
+  border-radius: 50%;
+  background: radial-gradient(circle, #8a3200, #531f00, #612400);
+  z-index: 4;
+  background-size: 5px 5px;
+  filter: drop-shadow(0 0 10px #682600);
+}
+
+.Petal1 {
+  position: absolute;
+  left: -48px;
+  z-index: 3;
+  width: 300px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff5e00, #ffbb00);
+  filter: drop-shadow(0 0 5px #e05200);
+}
+
+.Petal1.p1 { transform: rotate(0deg); }
+.Petal1.p2 { transform: rotate(10.59deg); }
+.Petal1.p3 { transform: rotate(21.18deg); }
+.Petal1.p4 { transform: rotate(31.77deg); }
+.Petal1.p5 { transform: rotate(42.36deg); }
+.Petal1.p6 { transform: rotate(52.95deg); }
+.Petal1.p7 { transform: rotate(63.54deg); }
+.Petal1.p8 { transform: rotate(74.13deg); }
+.Petal1.p9 { transform: rotate(84.72deg); }
+.Petal1.p10 { transform: rotate(95.31deg); }
+.Petal1.p11 { transform: rotate(105.9deg); }
+.Petal1.p12 { transform: rotate(116.49deg); }
+.Petal1.p13 { transform: rotate(127.08deg); }
+.Petal1.p14 { transform: rotate(137.67deg); }
+.Petal1.p15 { transform: rotate(148.26deg); }
+.Petal1.p16 { transform: rotate(158.85deg); }
+.Petal1.p17 { transform: rotate(169.44deg); }
+.Petal1.p18 { transform: rotate(180deg); }
+.Petal1.p19 { transform: rotate(190.59deg); }
+.Petal1.p20 { transform: rotate(201.18deg); }
+.Petal1.p21 { transform: rotate(211.77deg); }
+.Petal1.p22 { transform: rotate(222.36deg); }
+.Petal1.p23 { transform: rotate(232.95deg); }
+.Petal1.p24 { transform: rotate(243.54deg); }
+.Petal1.p25 { transform: rotate(254.13deg); }
+.Petal1.p26 { transform: rotate(264.72deg); }
+.Petal1.p27 { transform: rotate(275.31deg); }
+.Petal1.p28 { transform: rotate(285.9deg); }
+.Petal1.p29 { transform: rotate(296.49deg); }
+.Petal1.p30 { transform: rotate(307.08deg); }
+.Petal1.p31 { transform: rotate(317.67deg); }
+.Petal1.p32 { transform: rotate(328.26deg); }
+.Petal1.p33 { transform: rotate(338.85deg); }
+.Petal1.p34 { transform: rotate(349.44deg); }
+
+@keyframes pulsate {
+  0% {
+      transform: scale(1.5);
+  }
+  50% {
+      transform: scale(1.6);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+}
+
+.flower-image {
+  width: 350px; /* Ajusta el tamaño según tus necesidades */
+  height: 300px; /* Mantiene la proporción original */
+  display: 200px; /* Asegura que la imagen se muestre como un bloque */
+  margin-bottom: 5px; /* Espacio entre la imagen y otros elementos */
+}
+.flower-image2{
+  width: 350px; /* Ajusta el tamaño según tus necesidades */
+  height: 300px; /* Mantiene la proporción original */
+  
+  margin-bottom: 5px; /* Espacio entre la imagen y otros elementos */
+
+}
+
+ .love-image{
+  width: 350px;
+  height: 350px;
+  right: 100px;
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  z-index: 5;
+  position: absolute;
+}
+.johan-image{
+  width: 230px;
+  height: 350px;
+  right: 150px;
+  top: 385px; /* Ajusta la distancia desde la parte superior */
+  z-index: 5;
+  position: absolute;
+} 
+
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 500px; /* Ajusta según el espacio disponible */
+  padding: 0 20px; /* Ajusta el padding según sea necesario */
+}
+
+.text {
+  color: #d4a2f3; /* Color de texto en neón morado */
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente según sea necesario */
+  text-shadow: 
+    0 0 5px #d4a2f3, 
+    0 0 10px #d4a2f3, 
+    0 0 15px #d4a2f3, 
+    0 0 20px #8354b3, /* Color más oscuro para un efecto más brillante */
+    0 0 30px #7438b0, 
+    0 0 40px #53287e, 
+    0 0 50px #3f1966; /* Ajusta los valores para cambiar la intensidad del resplandor */
+  line-height: 1.6; /* Ajusta la altura de línea para la legibilidad */
+}
+
+ @media (max-width: 768px) {
+  .johan-image {
+    width: 0px; /* Ajustamos el tamaño */
+    height: 0px;
+    right: 150px; /* Ajustamos la posición */
+    top: 73px;
+  }
+}
+  @media (max-width: 768px) {
+    .love-image {
+      width: 300px; /* Ajustamos el tamaño */
+      height: 300px;
+      right: 47px; /* Ajustamos la posición */
+      top: 40px;
+    }
+  } 
+
+  @media (max-width: 768px) {
+    .text-container {
+      left: 210px;
+    
+      max-width: 200px; /* Ajusta el ancho en dispositivos móviles */
+      padding: 0 1px; /* Reduce el padding para mantener el diseño compacto */
+      top:630px;
+    }
+
+    .text {
+     
+      font-size: 1.2rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+      line-height: 0.9; /* Reduce aún más la altura de línea */
+    }
+  }
+
+  @media (max-width: 768px) {
+    
+    .flower {
+      height: 200px;
+      width: 200px;
+     top: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: #000000; /* Fondo negro */
+      animation: pulsate 2s infinite;
+    }
+
+
+    
+  }
+
+
+  
+

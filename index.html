@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bienvenida</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo negro */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', cursive;
+        }
+
+        .welcome-container {
+            text-align: center;
+        }
+
+        .welcome-container h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-container p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .welcome-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff5e00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.1s;
+        }
+
+        .welcome-container a:hover {
+            background-color: #e05200;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .text {
+            color: #d4a2f3; /* Color de texto en neón morado */
+            font-size: 1.5rem;
+            text-shadow: 
+              0 0 5px #d4a2f3, 
+              0 0 10px #d4a2f3, 
+              0 0 15px #d4a2f3, 
+              0 0 20px #8354b3, /* Color más oscuro para un efecto más brillante */
+              0 0 30px #7438b0, 
+              0 0 40px #53287e, 
+              0 0 50px #3f1966;
+            line-height: 1.6;
+            animation: blink 1.5s infinite; /* Animación de parpadeo */
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <img src="img3.jpeg" alt="" class="flower-image">
+        <h1 class="text">Para la niña de mis ojos</h1>
+        <p class="text">Dale click para demostrarte mi amor por ti</p>
+        <a href="index.html">🌻💜</a>
+    </div>
+</body>
+</html>
